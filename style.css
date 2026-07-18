@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    height:100vh;
+    width:100vw;
+    margin:0;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    background:#fff;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    box-shadow:none;
+}
+
+/* Left Side */
+
+.left-panel{
+    background:#1da1f2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.left-panel img{
+    width:70%;
+    max-width:350px;
+}
+
+/* Right Side */
+
+.right-panel{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.login-box{
+    width:100%;
+    max-width:370px;
+    display:flex;
+    flex-direction:column;
+}
+
+.login-box h1{
+    font-size:42px;
+    color:#333;
+    margin-bottom:8px;
+}
+
+.login-box p{
+    color:#777;
+    margin-bottom:35px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+label{
+    color:#666;
+    font-size:15px;
+}
+
+input{
+    height:55px;
+    padding:0 18px;
+    border:none;
+    border-radius:10px;
+    background:#f6f7fb;
+    font-size:15px;
+    outline:none;
+}
+
+input::placeholder{
+    color:#b4b4b4;
+}
+
+.forgot{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:-8px;
+}
+
+.forgot a{
+    font-size:14px;
+}
+
+button{
+    margin-top:10px;
+    height:60px;
+    border:none;
+    border-radius:12px;
+    background:#1da1f2;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#0c8ce4;
+}
+
+.register{
+    text-align:center;
+    margin-top:30px;
+    color:#666;
+}
+
+.register a{
+    text-decoration:none;
+    color:#1da1f2;
+    font-weight:bold;
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    .container{
+        grid-template-columns:1fr;
+        height:auto;
+    }
+
+    .left-panel{
+        display:none;
+    }
+
+    .right-panel{
+        padding:50px 25px;
+    }
+
+    .login-box h1{
+        font-size:34px;
+    }
+
+}
